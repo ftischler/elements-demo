@@ -1,0 +1,11 @@
+<h1>Greeter Element</h1>
+<form [formGroup]="formGroup" (submit)="onGreet()">
+  <div>
+    <input type="text" formControlName="input"> &nbsp;
+    <button type="submit">Greet!</button>
+  </div>
+  <br>
+  <div>
+    {{ result }}
+  </div>
+</form>

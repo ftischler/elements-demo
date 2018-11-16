@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <!-- Polyfills for Browsers supporting
+        Custom Elements. Needed b/c we downlevel
+        to ES5. See: @webcomponents/custom-elements
+    -->
+    <script src="native-shim.js"></script>
+
+    <!-- Polyfills for Browsers not supporting
+        Custom Elements. See: @webcomponents/custom-elements
+    -->
+    <script src="custom-elements.min.js"></script>
+
+    <!-- Rx -->
+    <script src="rxjs.umd.min.js"></script>
+
+    <!-- Angular Packages -->
+    <script src="core.umd.min.js"></script>
+    <script src="common.umd.min.js"></script>
+    <script src="platform-browser.umd.min.js"></script>
+    <script src="elements.umd.min.js"></script>
+
+    <!-- Custom Element -->
+    <script src="main.js"></script>
+
+    <!-- Calling Custom Element -->
+    <calculator-element name="Florian"></calculator-element>
+
+    <!--
+    Here we could call additional custom elements
+    reusing the loaded packages above.
+    -->
+  </body>
+</html>
